@@ -11,29 +11,51 @@
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            height: 100vh;
-            margin: 50px;
+            margin: 20px;
+        }
+
+        /* Marquee Effect Using CSS */
+        .marquee-container {
+            width: 100%;
+            overflow: hidden;
+            white-space: nowrap;
+            margin-bottom: 20px;
+        }
+
+        .marquee-text {
+            display: inline-block;
+            font-size: 42px;
+            font-style: italic;
+            animation: marquee 5s linear infinite alternate;
+        }
+
+        @keyframes marquee {
+            0% { transform: translateX(-50%); }
+            100% { transform: translateX(50%); }
         }
     </style>
 </head>
 <body>
-    <marquee scrollamount="10" behavior="alternate">
-        <h1 style="font-size: 42px;"><i>Happy Birthday Daddy!</i></h1>
-    </marquee>
-    
-    <br>
+
+    <div class="marquee-container">
+        <h1 class="marquee-text">Happy Birthday Daddy!</h1>
+    </div>
+
     <img src="father&me.jpeg" style="border-radius: 10px;"><br>
+    
     <p><i>
         im very grateful for the frequent calls bc i enjoy catching up with you and im also very grateful for your frequent visits too because i always miss you :C.<br>
         <br>
-        i just want to say i appreciate you for all the support and joy you bring me especially through supporting my education and through your expression of love for your grandchildren buy getting them new toys and outfits hehe. <br>
+        i just want to say i appreciate you for all the support and joy you bring me especially through supporting my education and through your expression of love for your grandchildren by getting them new toys and outfits hehe. <br>
         <br>
         i wish you the happiest birthday daddy. may we have clearer skin and healthier hair and may you have more rest days so that youre not so stressed all the time<br>
         <br>
         <br>
         with love from the 3 of us &lt;3
-        </i></p>
-        <img src="grandchildren.jpeg" style="border-radius: 10px; height: 200px;">
-        <br>
+    </i></p>
+
+    <img src="grandchildren.jpeg" style="border-radius: 10px; height: 200px;">
+    <br>
+
 </body>
 </html>
